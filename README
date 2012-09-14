@@ -1,0 +1,43 @@
+Sentiment Analysis For New Products
+===================================
+Input: 
+People comments from two well known technological websites techcrunch.com and cnet.com
+
+Output:
+Mining people opinion about new iPhone 5
+
+Technical Description:
+Goal:
+The goal was to see what people think about the new iPhone 5 which has been released yesterday Spetember 12, 2012 [1].
+
+Crawling Step and Generating Clean Raw Data:
+So, I wrote a simple crawler to crawl two pages from techcrunch and cnet websites wehere they had discussed the new Apple phone. This crawler basically downloads all the comments made by people. Next, the Beautiful Soup Python library was used for pulling data out of HTML pages [2].
+
+Sentiment Analysis using PycURL and text-processing API:
+In next step, I wanted to use some machine learning algortihms for sentiment analysis in order to find out what people think about the iPhone 5. However, for the test purpose I found an available API for sentiment analysis with Python NLTK [3]. Therefore, I simply used this website API in order to analyze the polarity of the comments regard to iPhone 5. For sending HTTP requests to the text-processing website, I found a very nice Python library called PycURL. PycURL is a Python interface to libcurl [4].
+
+Results:
+For techcrunch.com, we had 79 comments in total where 10 of them were labeled as neutral, 13 positive, and 56 of them were labelled as negative respect to the topic (iPhone 5):
+pos=16.4%
+neutral=12.6%
+neg=71%
+
+For cnet.com. we had 37 comments in total where 5 of them were labeled as neutral, 7 positive, and 25 of them were labelled as negative respect to the topic (iPhone 5):
+pos=19%
+neutral=13.5
+neg=67%
+
+Even if our dataset is restricted, our results are relatively consistent. The average results considering the data from both websites are:
+pos=17.7%
+neutral=13.05%
+neg=69%
+
+The above data just shows how people felt about new iPhone release after its demo on September 12, 2012 and it does not reflect the programmer opinion.
+ 
+For any inquiry, you can drop me a note at k.jahanbakhsh@gmail.com
+
+Refs:
+[1] http://www.cnet.com/iphone-5/
+[2] http://www.crummy.com/software/BeautifulSoup/
+[3] http://text-processing.com/demo/sentiment/
+[4] http://pycurl.sourceforge.net/
