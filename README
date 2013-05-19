@@ -1,7 +1,7 @@
 Sentiment Analysis For New Electronic Products
 ===================================
 Input: 
-People online reviews from two well known technological websites techcrunch.com and cnet.com for new iPhone 5
+Users' online reviews from two technological websites: techcrunch.com and cnet.com for new iPhone 5.
 
 Output:
 Mining people opinions about new iPhone 5
