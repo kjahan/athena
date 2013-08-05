@@ -1,17 +1,20 @@
 Sentiment Analysis For New Electronic Products
 ===================================
 Input: 
-Users' online reviews from two technological websites: techcrunch.com and cnet.com for new iPhone 5.
+Users' online reviews from two technological websites: www.techcrunch.com and www.cnet.com for iPhone 5 which was 
+release in Sep. 2012.
 
 Output:
-Mining people opinions about new iPhone 5
+People opinions sentiments for new iPhone 5
 
 Technical Description:
-Goal:
-The goal was to find out what people think about the new iPhone 5 which has been released yesterday Spetember 12, 2012 [1].
+The goal of this small project was to mine/analyze people opinions about the new iPhone 5 which has been released on 
+Spetember 12, 2012 [1].
 
-Crawling Step and Generating Clean Raw Data:
-I wrote a simple crawler to pull out people's comments from techcrunch.com and cnet.com websites where they had discussed the new Apple phone. This crawler basically downloads all reviews made by people. Next, the Beautiful Soup Python library was used for pulling data out of HTML pages in a nice and clean way[2].
+The code consists of two steps:
+
+A- Crawling online comments from web, clean up data and extract important information from raw html content:
+I developed crawler in Python to pull out people's comments from techcrunch.com and cnet.com websites where they discussed the new Apple phone. This crawler basically downloads all reviews made by people. Next, the Beautiful Soup Python library was used for pulling data out of HTML pages in a nice and clean way[2].
 
 Sentiment Analysis using PycURL and text-processing API:
 For the next step, I wanted to use some machine learning algortihms for sentiment analysis in order to find out what people think about the iPhone 5. However, for the test purpose I found an available API for sentiment analysis with Python NLTK [3]. Therefore, I used this website API in order to analyze the polarity of the comments regard to iPhone 5. For sending HTTP requests to the text-processing website, I found a very nice Python library called PycURL. PycURL is a Python interface to libcurl [4].
