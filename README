@@ -8,14 +8,12 @@ Output:
 People opinions sentiments for new iPhone 5
 
 Technical Description:
-The goal of this project was to mine/analyze people opinions about the new iPhone 5 which has been released on Spetember 12, 2012 [1] 
-by mining relevent websites.
+The goal of this project was to mine/analyze people opinions about the new iPhone 5 which has been released on Spetember 12, 2012 [1] by mining relevent websites.
 
 The code consists of two steps:
 
 A- Crawling online comments from web, cleaning up data and extracting important information from html content:
-I developed a Python web crawler to pull out people's comments from techcrunch.com and cnet.com websites where they discussed 
-the new released iPhone. This crawler downloads all reviews posted by people. Next, Beautiful Soup Python library was used 
+I developed a Python web crawler to pull out people's comments from techcrunch.com and cnet.com websites where they discussed the new released iPhone. This crawler downloads all reviews posted by people. Next, Beautiful Soup Python library was used 
 to extract important data from HTML contents [2].
 
 B- Running sentiment analysis using PycURL and text-processing API:
