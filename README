@@ -8,34 +8,46 @@ Output:
 People opinions sentiments for new iPhone 5
 
 Technical Description:
-The goal of this small project was to mine/analyze people opinions about the new iPhone 5 which has been released on 
-Spetember 12, 2012 [1].
+The goal of this project was to mine/analyze people opinions about the new iPhone 5 which has been released on 
+Spetember 12, 2012 [1] by mining relevent websites.
 
 The code consists of two steps:
 
-A- Crawling online comments from web, clean up data and extract important information from raw html content:
-I developed crawler in Python to pull out people's comments from techcrunch.com and cnet.com websites where they discussed the new Apple phone. This crawler basically downloads all reviews made by people. Next, the Beautiful Soup Python library was used for pulling data out of HTML pages in a nice and clean way[2].
+A- Crawling online comments from web, cleaning up data and extracting important information from html content:
+I developed a Python web crawler to pull out people's comments from techcrunch.com and cnet.com websites where they 
+discussed the new released iPhone. This crawler downloads all reviews posted by people. Next, Beautiful Soup Python 
+library was used to extract important data from HTML contents [2].
 
-Sentiment Analysis using PycURL and text-processing API:
-For the next step, I wanted to use some machine learning algortihms for sentiment analysis in order to find out what people think about the iPhone 5. However, for the test purpose I found an available API for sentiment analysis with Python NLTK [3]. Therefore, I used this website API in order to analyze the polarity of the comments regard to iPhone 5. For sending HTTP requests to the text-processing website, I found a very nice Python library called PycURL. PycURL is a Python interface to libcurl [4].
+B- Running sentiment analysis using PycURL and text-processing API:
+For the second step, I used a machine learning algortihm for sentiment analysis to find out what people think about 
+the iPhone 5. I found an available API for the sentiment analysis implemented by Python NLTK [3]. Thus, I used this 
+website API in order to analyze the polarities of posted comments. For sending HTTP requests to text-processing 
+website, I used a Python library called PycURL. PycURL is a Python interface to libcurl [4].
 
 Results:
-For techcrunch.com, I collected 79 comments in total where 10 of them were labeled neutral, 13 positive, and 56 of them were labelled negative respect to the topic (iPhone 5):
+For techcrunch.com, I collected 79 comments in total where 10 of them were labeled neutral, 13 positive, and 56 of 
+them were labelled negative respect to the topic (iPhone 5). Below is the details:
+
 pos=16.4%
 neutral=12.6%
 neg=71%
 
-For cnet.com, I also collected 37 comments in total where 5 of them were labeled neutral, 7 positive, and 25 of them were labelled negative:
+For cnet.com, I collected 37 comments in total where 5 of them were labeled neutral, 7 positive, and 25 of them were 
+labelled negative. Below is the details:
+
 pos=19%
 neutral=13.5
 neg=67%
 
-Even if our dataset is limited, our results are relatively consistent. The average results considering the data from both websites are:
+Even if our dataset is limited, our results are relatively consistent across both websites. The average results 
+considering the data from both websites are:
+
 pos=17.7%
 neutral=13.05%
 neg=69%
 
-The above data just shows how people felt about the new iPhone release after its demo on September 12, 2012 and it does not reflect the developer's opinion.
+Observations: above results show how people thought about the new iPhone release after its demo on September 12, 2012 
+and it does not reflect the developer's opinion.
  
 For any inquiry, you can drop me a note at k.jahanbakhsh@gmail.com
 
