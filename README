@@ -7,6 +7,11 @@ release in Sep. 2012.
 Output:
 People opinions sentiments for new iPhone 5
 
+Dependencies:
+For running this code you need to have Python 2.7 and install PycURL & BeautifulSoup packages on your machine. Check link below for more details:
+http://www.crummy.com/software/BeautifulSoup/
+http://pycurl.sourceforge.net/
+
 Technical Description:
 The goal of this project was to mine/analyze people opinions about the new iPhone 5 which has been released on Spetember 12, 2012 
 [1] by mining relevent websites.
