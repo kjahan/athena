@@ -1,5 +1,7 @@
-Sentiment Analysis For New Electronic Products
-===================================
+Sentiment Analysis 
+==================
+
+Sentiment Analysis of Electronic Products
 
 ## Input
  
