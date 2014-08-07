@@ -22,30 +22,36 @@ For running this code you need to have Python 2.7 and install PycURL & Beautiful
 
 ## Technical Description
 
-	The goal of this project was to mine/analyze people opinions about the new iPhone 5 which has been released on Spetember 12, 2012 
-[1] by mining relevent websites.
+	The goal of this project was to mine/analyze people opinions about the new iPhone 5 
+	which has been released on Spetember 12, 2012 [1] by mining relevent websites.
 
 ## The code consists of two steps
 
 A- Crawling online comments from web, cleaning up data and extracting important information from html content:
 
-	I developed a Python web crawler to pull out people's comments from techcrunch.com and cnet.com websites where they discussed th new released iPhone. This crawler downloads all reviews posted by people. Next, Beautiful Soup Python library was used to extract important data from HTML contents [2].
+	We developed a Python web crawler to pull out people's comments from techcrunch.com and 
+	cnet.com websites where they discussed th new released iPhone. This crawler downloads 
+	all reviews posted by people. Next, Beautiful Soup Python library was used to extract 
+	important data from HTML contents [2].
 
 B- Running sentiment analysis using PycURL and text-processing API:
 
-	For the second step, I used a machine learning algortihm for sentiment analysis to find out what people think about the iPhone 5. I found an available API for the sentiment analysis implemented by Python NLTK [3]. Thus, I used this website API in order to analyze 
-the polarities of posted comments. For sending HTTP requests to text-processing website, I used a Python library called PycURL. PycURL is a Python interface to libcurl [4].
+	For the second step, we used a machine learning algortihm for sentiment analysis to find 
+	out what people think about the iPhone 5. We found an available API for the sentiment 
+	analysis implemented by Python NLTK [3]. Thus, we used this website API in order to analyze 
+	the polarities of posted comments. For sending HTTP requests to text-processing website, 
+	we used a Python library called PycURL. PycURL is a Python interface to libcurl [4].
 
 ## Results
 
-For techcrunch.com, I collected 79 comments in total where 10 of them were labeled neutral, 13 positive, and 56 of them were labelled 
+For techcrunch.com, we collected 79 comments in total where 10 of them were labeled neutral, 13 positive, and 56 of them were labelled 
 negative respect to the topic (iPhone 5). Below is the details:
 
 	pos=16.4%
 	neutral=12.6%
 	neg=71%
 
-For cnet.com, I collected 37 comments in total where 5 of them were labeled neutral, 7 positive, and 25 of them were labelled negative. 
+For cnet.com, we collected 37 comments in total where 5 of them were labeled neutral, 7 positive, and 25 of them were labelled negative. 
 Below is the details:
 
 	pos=19%
