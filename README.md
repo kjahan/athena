@@ -16,8 +16,8 @@ People opinions sentiments for new iPhone 5
 
 For running this code you need to have Python 2.7 and install PycURL & BeautifulSoup packages on your machine. Check link below for more details:
 	
-	http://www.crummy.com/software/BeautifulSoup/
-	http://pycurl.sourceforge.net/
+	www.crummy.com/software/BeautifulSoup/
+	pycurl.sourceforge.net/
 
 
 ## Technical Description
@@ -66,7 +66,7 @@ If you have any question regard to this project, please drop me a note @ "k DOT 
 
 ## Refs
 
-[1] http://www.cnet.com/iphone-5/
-[2] http://www.crummy.com/software/BeautifulSoup/
-[3] http://text-processing.com/demo/sentiment/
-[4] http://pycurl.sourceforge.net/
+[1] www.cnet.com/iphone-5/
+[2] www.crummy.com/software/BeautifulSoup/
+[3] text-processing.com/demo/sentiment/
+[4] pycurl.sourceforge.net/
