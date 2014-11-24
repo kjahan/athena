@@ -1,7 +1,7 @@
 Sentiment Analysis 
 ==================
 
-This project consisted of three parts. The first part is the sentiment analysis of electronic products from www.TechCrunch.com and www.CNET.com. The second part is focused on analyzing sentiment of amazon reviews for different products. Finally, the last part is on analyzing Macys reviews.
+This project consisted of three parts. The first part is the sentiment analysis of electronic products from www.TechCrunch.com and www.CNET.com. The second part is focused on analyzing sentiment of amazon reviews for "George Foreman GRP99" product. Finally, the last part is on analyzing Macys reviews posted for "George Foreman GRP99" product.
 
 ## Part I: Analyzing TechCrunch and CNET Reviews
 ## Input
@@ -64,9 +64,13 @@ Above results show how people thought about the new iPhone release after its dem
 the developer's opinion.
 
 ## Part II: Analyzing Amazon Reviews:
-In Nov 2014, I was contacted by Eliza Suzuki when we worked on the problem of extracting reviews for Amazon product and compute their sentiments. Eliza's goal was to see if there is any difference between Amazon stars and real people reviews. We focused on reviews about "George Foreman GRP99" product. For sentiment computation we used vaderSentiment library (https://pypi.python.org/pypi/vaderSentiment/0.5). For more technical details please visit the article we published here: www.aioptify.com/crawling.php.
+In Nov 2014, I was contacted by Eliza Suzuki when we worked on the problem of extracting reviews for Amazon product and compute their sentiments. Eliza's goal was to see if there is any difference between Amazon stars and real people reviews. We focused on reviews about "George Foreman GRP99" product. For sentiment computation we used vaderSentiment library (https://pypi.python.org/pypi/vaderSentiment/0.5). 
+
+For more technical details please visit the article we published here: www.aioptify.com/crawling.php.
 
 ## Part III: Analyzing Macys Reviews:
-In Nov 2014, we also got interested in extracting Macys reviews for "George Foreman GRP99" product. The challenge with Macys website was that we couldn't use "urllib" module anymore due to content nature of the Macys website. So, we ended up using PhantomJS for crawling the website (http://phantomjs.org/). For more technical details please visit the article we published here: www.aioptify.com/crawling.php.
+In Nov 2014, we also got interested in extracting Macys reviews for "George Foreman GRP99" product. The challenge with Macys website was that we couldn't use "urllib" module anymore due to content nature of the Macys website. So, we ended up using PhantomJS for crawling the website (http://phantomjs.org/). 
+
+For more technical details please visit the article we published here: www.aioptify.com/crawling.php.
  
 If you have any question regard to this project, please drop me a note @ "k DOT jahanbakhsh AT gmail DOT com".
