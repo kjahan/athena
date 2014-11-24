@@ -1,7 +1,7 @@
 Sentiment Analysis 
 ==================
 
-Sentiment Analysis of Electronic Products
+This project consisted of a few pieces. The first part is the sentiment analysis of electronic products from TechCrunch.com and CNET.com.
 
 ## Input
  
