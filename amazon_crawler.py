@@ -114,9 +114,9 @@ def run(rev_file = None, sent_file = None):
 
 def main():
     #load collected amazon reviews from file and compute their sentimnents
-    run("amazon_reviews.txt", "amazon_sentiments.txt")
+    #run("amazon_reviews.txt", "amazon_sentiments.txt")
     #crawl posts
-    #run()
+    run()
 
 if __name__ == "__main__":
     sys.exit(main())
