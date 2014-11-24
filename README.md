@@ -1,8 +1,9 @@
 Sentiment Analysis 
 ==================
 
-This project consisted of a few pieces. The first part is the sentiment analysis of electronic products from TechCrunch.com and CNET.com.
+This project consisted of three parts. The first part is the sentiment analysis of electronic products from www.TechCrunch.com and www.CNET.com. The second part is focused on analyzing sentiment of amazon reviews for different products. Finally, the last part is on analyzing Macys reviews.
 
+## Part I: TechCrunch and CNET Reviews
 ## Input
  
 Users' online reviews from two technological websites: www.techcrunch.com and www.cnet.com for iPhone 5 which was 
@@ -22,17 +23,17 @@ For running this code you need to have Python 2.7 and install PycURL & Beautiful
 
 ## Technical Description
 
-The goal of this project was to mine/analyze people opinions about the new iPhone 5 which has been released on Spetember 12, 2012 [1] by mining relevent websites.
+The goal of this project was to mine/analyze people opinions about the new iPhone 5 which has been released on Spetember 12, 2012 (www.cnet.com/iphone-5/) by mining relevent websites.
 
 ## The code consists of two steps
 
 A- Crawling online comments from web, cleaning up data and extracting important information from html content:
 
-We developed a Python web crawler to pull out people's comments from techcrunch.com and cnet.com websites where they discussed th new released iPhone. This crawler downloads all reviews posted by people. Next, Beautiful Soup Python library was used to extract important data from HTML contents [2].
+We developed a Python web crawler to pull out people's comments from techcrunch.com and cnet.com websites where they discussed th new released iPhone. This crawler downloads all reviews posted by people. Next, Beautiful Soup Python library (www.crummy.com/software/BeautifulSoup/) was used to extract important data from HTML contents.
 
 B- Running sentiment analysis using PycURL and text-processing API:
 
-For the second step, we used a machine learning algortihm for sentiment analysis to find out what people think about the iPhone 5. We found an available API for the sentiment analysis implemented by Python NLTK [3]. Thus, we used this website API in order to analyze the polarities of posted comments. For sending HTTP requests to text-processing website, we used a Python library called PycURL. PycURL is a Python interface to libcurl [4].
+For the second step, we used a machine learning algortihm for sentiment analysis to find out what people think about the iPhone 5. We found an available API for the sentiment analysis implemented by Python NLTK (text-processing.com/demo/sentiment/). Thus, we used this website API in order to analyze the polarities of posted comments. For sending HTTP requests to text-processing website, we used a Python library called PycURL. PycURL is a Python interface to libcurl (www.pycurl.sourceforge.net/).
 
 ## Results
 
