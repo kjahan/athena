@@ -1,7 +1,15 @@
-Sentiment Analysis 
-==================
+![Image description](https://i.pinimg.com/originals/7d/39/ae/7d39aeb413dc2a6053aa4fa58cdbd1b9.jpg)
 
-This project consisted of three parts. The first part is the sentiment analysis of electronic products from www.TechCrunch.com and www.CNET.com. The second part is focused on analyzing sentiment of amazon reviews for "George Foreman GRP99" product. Finally, the last part is on analyzing Macys reviews posted for "George Foreman GRP99" product.
+Athena: Sentiment Analysis 
+==========================
+
+This project consisted of three parts:
+
+(I) The first piece is the sentiment analysis of electronic products from www.TechCrunch.com and www.CNET.com. 
+
+(II) The second part is focused on analyzing sentiment of amazon reviews for "George Foreman GRP99" product. 
+
+(III) Finally, the last part is on analyzing Macys reviews posted for "George Foreman GRP99" product.
 
 ## Part I: Analyzing TechCrunch and CNET Reviews
 ## Input
